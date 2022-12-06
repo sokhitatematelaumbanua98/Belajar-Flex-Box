@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font: 16px;
+  background-color: rgb(175, 175, 163);
+  font-family: "Poppins" sans-serif;
+  height: 1000px;
+}
+
+.topbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 50px;
+  background-color: antiquewhite;
+  border-bottom: 3px solid salmon;
+  z-index: 999;
+}
+
+.container {
+  width: 900px;
+  margin: 50px auto;
+  background-color: white;
+  
+}
+.header {
+  padding: 20px;
+  padding: 10px;
+}
+.header .judul {
+  font-size: 40px;
+  font-weight: bold;
+  margin-top: 5px;
+}
+.header li {
+  display: inline-block;
+  margin-top: 20px;
+  margin-right: 10px;
+}
+
+.header a {
+  text-decoration: none;
+  color: salmon;
+  padding: 2px;
+  transition: all 2s;
+}
+
+.header a.active {
+  background-color: black;
+}
+.header a:hover {
+  background: rgb(5, 5, 12);
+  color: rgb(208, 208, 219);
+}
+.hero {
+  height: 320px;
+  background-image: url(img/15.jpg);
+  background-size: cover;
+  background-position: 0 -180px;
+  border-top: 5px solid salmon;
+  border-bottom: 5px solid rgb(65, 65, 92);
+}
+
+.main {
+  width: 600px;
+  padding: 20px;
+  box-sizing: border-box;
+
+  float: left;
+}
+.main h2 {
+  margin-bottom: 30px;
+  font-size: 25px;
+  font-weight: bold;
+}
+.main p {
+  font-size: 16px;
+  color: #666;
+}
+
+.sidebar {
+  width: 300px;
+  float: right;
+  padding-top: 20px;
+ 
+}
+
+.sidebar img {
+  width: 70px;
+  height: 70px;
+  float: left;
+  padding-right: 10px;
+  padding-top: 20px;
+}
+
+.sidebar p {
+  font-size: 16px;
+  color: #666;
+  padding-top: 20px;
+}
+.links {
+  padding-top: 10px;
+  
+}
+
+.links i {
+  font-size: 20px;
+ 
+  color: #666;
+  letter-spacing: 2px;
+  transition: all 0.2s;
+  padding-top: 10px;
+  right:10px;
+  
+}
+.sidebar h3{
+    margin-top: 5px;
+}
+
+.links i:hover {
+  color: rgb(141, 3, 130);
+}
+.footer {
+  background: #666;
+  padding: 14px;
+
+  
+}
+
+.footer .copy {
+  color: white;
+  text-align: center;
+}
+
+/* untuk clear fix */
+
+.cf:before,
+.cf:after {
+  content: " "; /* 1 */
+  display: table; /* 2 */
+}
+
+.cf:after {
+  clear: both;
+}
+
+.cf {
+  *zoom: 1;
+}
